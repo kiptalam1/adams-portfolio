@@ -4,7 +4,9 @@
 
 @theme {
   /* Typography */
-  --font-sans: 'Urbanist', 'Inter', 'Roboto', 'Open Sans', sans-serif;
+  --font-urbanist: 'Urbanist',  'Open Sans', sans-serif, system-ui;
+  --font-inter: 'Inter', 'Open Sans', sans-serif, system-ui;
+  --font-roboto: 'Roboto', 'Open Sans', sans-serif, system-ui;
 
   /* Backgrounds */
   --color-bg: #F9FAFB;
