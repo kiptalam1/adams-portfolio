@@ -1,0 +1,30 @@
+{
+	"name": "adams-portfolio",
+	"version": "1.0.0",
+	"description": "my portfolio website",
+	"scripts": {
+		"dev": "parcel src/index.html",
+		"build": "parcel build src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kiptalam1/adams-portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kiptalam1/adams-portfolio/issues"
+	},
+	"homepage": "https://github.com/kiptalam1/adams-portfolio#readme",
+	"devDependencies": {
+		"parcel": "^2.16.4"
+	},
+	"dependencies": {
+		"@tailwindcss/postcss": "^4.2.2",
+		"eslint-config-react-app": "^7.0.1",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4",
+		"tailwindcss": "^4.2.2"
+	}
+}
