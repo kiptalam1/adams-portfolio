@@ -3,7 +3,9 @@
 		"title": "ProjoStack",
 		"description": "A multi-tenant workspace management platform — Manage workspaces, projects, tasks, and team members with role-based access control. Features workspace invitations, task assignments, and project tracking across multiple organizations.",
 		"tech": ["React", "Express", "PostgreSQL", "TailwindCSS", "Typescript"],
-		"image": "https://github.com/kiptalam1/ProjoStack/blob/main/apps/web/src/assets/workspaces.png?raw=true"
+		"image": "https://github.com/kiptalam1/ProjoStack/blob/main/apps/web/src/assets/workspaces.png?raw=true",
+		"liveUrl": "https://projostack.onrender.com/",
+		"githubUrl": "https://github.com/kiptalam1/projostack"
 	},
 	{
 		"title": "HouseKonekt",
@@ -16,13 +18,17 @@
 			"Typescript",
 			"SocketIO"
 		],
-		"image": "https://github.com/kiptalam1/housekonekt/blob/main/housekonekt.png?raw=true"
+		"image": "https://github.com/kiptalam1/housekonekt/blob/main/housekonekt.png?raw=true",
+		"liveUrl": "https://housekonekt.onrender.com/",
+		"githubUrl": "https://github.com/kiptalam1/housekonekt"
 	},
 
 	{
 		"title": "Malibaze",
 		"description": "A full-featured e-commerce platform — Complete online store with product catalog, shopping cart, user authentication, order management, and payment processing.",
 		"tech": ["React", "Express", "MongoDB", "TailwindCSS", "Typescript"],
-		"image": "https://github.com/kiptalam1/MaliBaze/blob/main/products.png?raw=true"
+		"image": "https://github.com/kiptalam1/MaliBaze/blob/main/products.png?raw=true",
+		"liveUrl": "https://malibazee.onrender.com/",
+		"githubUrl": "https://github.com/kiptalam1/malibaze"
 	}
 ]
