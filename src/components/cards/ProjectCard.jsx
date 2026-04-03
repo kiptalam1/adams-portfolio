@@ -1,17 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ProjectCard({ project }) {
 	const [isExpanded, setIsExpanded] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 	const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
+	// prevent scrolling when image modal is open;
+	useEffect(() => {
+		if (isImageModalOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, [isImageModalOpen]);
+
+	// close modal on ESC key;
+	useEffect(() => {
+		const handleEsc = (e) => {
+			if (e.key === "Escape" && isImageModalOpen) {
+				setIsImageModalOpen(false);
+			}
+		};
+		window.addEventListener("keydown", handleEsc);
+
+		return () => {
+			window.removeEventListener("keydown", handleEsc);
+		};
+	}, [isImageModalOpen]);
+
 	const shouldTruncate = project.description.length > 100;
 	const displayDescription =
 		isExpanded ? project.description : project.description.slice(0, 100);
 
-	console.log(project.image);
-	
-	
 	return (
 		<>
 			<div
