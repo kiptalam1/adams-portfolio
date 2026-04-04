@@ -1,7 +1,6 @@
 import {
   SiExpress,
   SiGit,
-  SiGithub,
   SiJavascript,
   SiJest,
   SiMongodb,
@@ -13,6 +12,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { VscGithub } from "react-icons/vsc";
 
 export default function Technologies() {
   const LEVELS = {
@@ -28,24 +28,28 @@ export default function Technologies() {
         name: "React",
         icon: SiReact,
         color: "#61DAFB",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "TypeScript",
         icon: SiTypescript,
         color: "#3178C6",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "JavaScript",
         icon: SiJavascript,
         color: "#F7DF1E",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "Tailwind",
         icon: SiTailwindcss,
         color: "#06B6D4",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
     ],
@@ -54,51 +58,65 @@ export default function Technologies() {
         name: "Node.js",
         icon: SiNodedotjs,
         color: "#339933",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "Express",
         icon: SiExpress,
         color: "#000000",
+        darkModeFix: true,
         level: LEVELS.ADVANCED,
       },
       {
         name: "PostgreSQL",
         icon: SiPostgresql,
         color: "#4169E1",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "MongoDB",
         icon: SiMongodb,
         color: "#47A248",
+        darkModeFix: false,
         level: LEVELS.ADVANCED,
       },
       {
         name: "Prisma",
         icon: SiPrisma,
         color: "#2D3748",
+        darkModeFix: true,
         level: LEVELS.EXPERT,
       },
       {
         name: "Socket.io",
         icon: SiSocketdotio,
         color: "#010101",
+        darkModeFix: true,
         level: LEVELS.INTERMEDIATE,
       },
     ],
     Tools: [
-      { name: "Git", icon: SiGit, color: "#F05032", level: LEVELS.ADVANCED },
+      {
+        name: "Git",
+        icon: SiGit,
+        color: "#F05032",
+        darkModeFix: false,
+        level: LEVELS.ADVANCED,
+      },
       {
         name: "GitHub",
-        icon: SiGithub,
+        icon: VscGithub,
         color: "#181717",
+        darkModeFix: true,
         level: LEVELS.ADVANCED,
       },
       {
         name: "Jest",
         icon: SiJest,
         color: "#C21325",
+        darkModeFix: false,
         level: LEVELS.INTERMEDIATE,
       },
     ],
@@ -123,7 +141,12 @@ export default function Technologies() {
                 hover:shadow-sm transition"
               >
                 <div className="flex items-center gap-2">
-                  <tech.icon size={18} color={tech.color} />
+                  <tech.icon
+                    size={18}
+                    color={tech.color}
+                    className={`${tech.darkModeFix ? "dark:brightness-150 dark:invert" : ""}
+                    `}
+                  />
                   <span className="text-sm text-text">{tech.name}</span>
                 </div>
 
