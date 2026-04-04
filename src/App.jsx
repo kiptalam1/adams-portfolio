@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
@@ -12,6 +13,7 @@ export default function App() {
       <Technologies />
       <Projects />
       <Contacts />
+      <Footer />
     </div>
   );
 }
