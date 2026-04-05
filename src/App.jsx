@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
@@ -7,15 +6,14 @@ import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 
 export default function App() {
-  return (
-    <div className="h-full min-h-screen w-full min-w-screen bg-bg text-text text-base font-urbanist p-4 sm:p-6 md:p-8 lg:p-10 space-y-4">
-      <Header />
-      <About />
-      <Technologies />
-      <Projects />
-      <Contacts />
-      <Footer />
-      <Analytics />
-    </div>
-  );
+	return (
+		<div className="h-full min-h-screen w-full min-w-screen bg-bg text-text text-base font-urbanist p-4 sm:p-6 md:p-8 lg:p-10 space-y-4">
+			<Header />
+			<About />
+			<Technologies />
+			<Projects />
+			<Contacts />
+			<Footer />
+		</div>
+	);
 }
