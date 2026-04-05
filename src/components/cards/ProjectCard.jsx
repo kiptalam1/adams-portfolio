@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
   return (
 		<>
 			<div
-				className="rounded-xl bg-surface shadow-lg hover:shadow-xl transition-all duration-300 shadow-bg flex flex-col h-110 overflow-hidden border border-border/50 hover:border-border group pb-0"
+				className="rounded-xl bg-surface shadow-lg hover:shadow-xl transition-all duration-300 shadow-bg flex flex-col overflow-hidden border border-border/50 hover:border-border group pb-0"
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}>
 				{/* image container */}
